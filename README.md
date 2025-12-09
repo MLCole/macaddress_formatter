@@ -9,7 +9,7 @@ It is designed around a simple workflow:
 This solves the common problem where multi-line input gets truncated by the terminal `input()`.
 By reading exclusively from the clipboard, the script processes lists reliably every time.
 
-✨ Features
+## ✨ Features
   ✔️ Reads entire lists directly from clipboard (multi-line, comma-separated, or space-separated)
   
   ✔️ Detects list delimiters automatically
