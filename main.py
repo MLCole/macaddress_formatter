@@ -54,7 +54,7 @@ while True:
     # Detect & Capture what is in clipboard
     target = pyperclip.paste()
     # Search for List Delimiters & send to sorter for list formatting
-    elif '\n' in target:
+    if '\n' in target:
         list_sorter(target, delimiter='\n')
     elif ',' in target:
         list_sorter(target, delimiter=',')
