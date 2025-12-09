@@ -11,24 +11,41 @@ By reading exclusively from the clipboard, the script processes lists reliably e
 
 ✨ Features
   ✔️ Reads entire lists directly from clipboard (multi-line, comma-separated, or space-separated)
+  
   ✔️ Detects list delimiters automatically
+  
   ✔️ Normalizes MACs by:
+  
       - Removing colons 
+      
           OR
+          
       - Adding colons every two characters
+      
   ✔️ Converts all output to uppercase
+  
   ✔️ Copies final result to clipboard in one operation
+  
   ✔️ Handles malformed or empty entries safely
+  
   ✔️ Runs continuously until you press Ctrl+C
+  
 
 # ▶️ How to Use
 1. Copy one of the following to your clipboard:
+   
   - A single MAC
+  
   - A newline-separated list
+  
   - A comma-separated list
+  
   - A space-separated list
+
 2. Return to the script window.
+
 3. Press Enter to process the clipboard contents.
+
 4. Paste the cleaned output wherever you need it.
 
 The script repeats this loop indefinitely, allowing multiple sets to be processed quickly.
@@ -36,14 +53,20 @@ The script repeats this loop indefinitely, allowing multiple sets to be processe
 # ❌ Invalid Input Handling
 
 If a MAC without colons has an odd number of characters:
+
   `abc1234`
+  
   The script prints:
+  
     `Please try again. An even number of characters is required.`
+  
   And clipboard output is not overwritten.
 
 # 🛠 Requirements
 Install pyperclip:
+
   `pip install pyperclip`
 
 Run the script:
+
   `python mac_formatter.py`
