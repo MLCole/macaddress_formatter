@@ -49,10 +49,10 @@ def coloner(mac_address):
 
 
 while True:
-    target = input("Please provide the MAC address you'd like processed (or enter 'x' to eXit): ")
-
-    if target == "X" or target == "x" or target == "exit":
-        exit()
+    print("Please copy the MAC addresses you'd like processed to system clipboard.")
+    input("Press <Enter> key to process clipboard (or 'Ctrl+C' to quit): ")
+    # Detect & Capture what is in clipboard
+    target = pyperclip.paste()
     # Search for List Delimiters & send to sorter for list formatting
     elif '\n' in target:
         list_sorter(target, delimiter='\n')
